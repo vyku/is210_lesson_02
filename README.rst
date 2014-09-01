@@ -41,8 +41,8 @@ commands:
 
 .. code-block:: console
 
-    $ git config user.name "FIRST LAST"
-    $ git config user.email "CUNY_SPS_EMAIL"
+    $ git config --global user.name "FIRST LAST"
+    $ git config --global user.email "CUNY_SPS_EMAIL"
 
 Where ``FIRST`` and ``LAST`` are your first and last name, respectively and
 ``CUNY_SPS_EMAIL`` is your spsmail.cuny.edu e-mail address.
