@@ -8,8 +8,8 @@ Homework #2
 :College: CUNY School of Professional Studies
 :Course-Name: Software Application Programming I
 :Course-Code: IS 210
-:Available: 2014-09-08T09:00:00-0400
-:Due-Date: 2014-09-15T09:00:00-0400
+:Available: 2014-09-02 09:00 AM Eastern US
+:Due-Date: 2014-09-8 09:00 AM Eastern US
 
 Overview
 ========
@@ -30,7 +30,7 @@ the starter repo on `GitHub` and then clone the newly created repository to
 your working machine. The link to the starter repository is found in the
 Blackboard Lesson 02 Course Materials.
 
-Once you've done this, start Git Bash on your local development workstation.
+Once you have done this, start Git Bash on your local development workstation.
 
 Virtual Lab (Only)
 ------------------
@@ -50,6 +50,12 @@ Where ``FIRST`` and ``LAST`` are your first and last name, respectively and
 Getting the Starter Code
 ------------------------
 
+Fork the Lesson 02 homework repository located at:
+
+    https://github.com/is210-2014-fall-01/is210_lesson_02
+    
+Clone your forked repository to your workstation.
+
 .. code-block:: console
 
     $ git clone HTTPS_CLONE_URL
@@ -60,7 +66,7 @@ of the starter repo. Please be cautious and check that you're cloning your
 repo and not the parent repository. To check, make sure that your username
 is in the Clone URL:
 
-    https://github.com/YOUR-USERNAME/is210_lesson_XX.git
+    https://github.com/YOUR-USERNAME/is210_lesson_02.git
 
 
 Enter the Newly Created Local Repository
@@ -70,7 +76,7 @@ Use the ``cd`` command to enter the starter repository directory.
 
 .. code-block:: console
 
-    $ cd is210_lesson_XX
+    $ cd is210_lesson_02
 
 Where XX is the lesson number. This will change with each lesson but is found
 in the Clone URL as the part after the last slash (``/``) and before ``.git``.
@@ -140,6 +146,11 @@ Virtual Lab users, especially, take note of this recommendation as the
 Virtual Lab long-term storage options are not-yet available and each Virtual
 Lab machine is wiped clean each time you log-off.
 
+In general, it is better practice to make lots of little commits with descriptive
+comments against single files than commits that encompass huge numbers of
+changes. This programming pattern will save you some painful debugging and maybe 
+even finger pointing at some point in the future.
+
 To save your work, first check what files have changed in your repository.
 
 .. code-block:: console
@@ -160,7 +171,7 @@ To save your work, first check what files have changed in your repository.
 
             new_python.py
 
-Now add the files you've recently worked on to staging. The ``add`` command
+Now add the files you have recently worked on to staging. The ``add`` command
 adds changes, not files, so it must be used to add new and existing files
 alike.
 
@@ -203,24 +214,24 @@ Instructions
 
 The following tasks will either have you interacting with existing files in
 the starter repo or creating new ones on the fly. Don't forget to add your
-interpreter directive, utf-8 encoding, and a short docstring with any new files
+interpreter directive, ``utf-8`` encoding, and a short docstring with any new files
 that you create!
 
 .. important::
 
-    In these exercises you may, on occasion, come across a task that requres
+    In these exercises you may, on occasion, come across a task that requires
     you to research or use a function or method not directly covered by the
     course text. Since Python is such a large language it would be impossible
     for the author to have included descriptions of each and every available
-    function which would largely duplicate the offical Python documentation.
+    function which would largely duplicate the official Python documentation.
 
     A *vital* skill to successful programming is being comfortable searching
     for and using official language documentation sources like the
     `Python String Documentation`_ page. Throughout our coursework we will be
-    practicing both the use of the langugae in practice and the search skills
+    practicing both the use of the language in practice and the search skills
     necessary to become functional programmers.
 
-Task 01: Reassignment
+Task 1: Reassignment
 ---------------------
 
 In the reading we learned that strings are immutable, meaning they cannot be
@@ -231,7 +242,7 @@ changed. Is the same true for the variables that hold them?
 #.  After line 8, add another line and try to assign a new value of
     ``Nevermore!`` to the ``RAVEN`` variable.
 
-Task 02: Integer Math
+Task 2: Integer Math
 ---------------------
 
 Python has an order of operations that respects parentheses. Create a
@@ -249,7 +260,7 @@ single-line math statement.
 
     #.  Divide all of the above by 7
 
-Task 03: String Slicing
+Task 3: String Slicing
 -----------------------
 
 Strings are just sequences that can be sliced or repeated with simple
@@ -264,7 +275,7 @@ operators.
 #.  Repeat the value of the ``KLAXON`` variable 5 times using the repetition
     operator and save the value *back into* the ``KLAXON`` variable.
 
-Task 04: Split a String
+Task 4: Split a String
 -----------------------
 
 The ``.split()`` method can be used to split a string up according to a
@@ -286,7 +297,7 @@ be changed to another string.
     multi-line string in code, though we try to avoid such long strings when
     possible.
 
-Task 05: Slicing a List
+Task 5: Slicing a List
 -----------------------
 
 Strings and lists are both types of *sequences* which mean they share many
@@ -298,7 +309,7 @@ common behaviors. One such behavior is slicing.
 
 Food for thought: When you slice a list, what object type is returned?
 
-Task 06: Calculating Length
+Task 6: Calculating Length
 ---------------------------
 
 The ``len()`` function is another type of function that has a similar
@@ -311,7 +322,7 @@ should count the members.
 #.  Now try using ``len()`` to determine the length of the original variable,
     ``THE_GREAT_QUESTION`` and assign it into a new variable, ``CHARACTERS``.
 
-Task 07: Testing Membership
+Task 7: Testing Membership
 ---------------------------
 
 The ``in`` operator is an incredibly useful tool that tests for the membership
@@ -325,7 +336,7 @@ of one object in another. It's also usable between both strings and lists.
     string in the ``ARTISTS`` variable. Store the result in a new variable
     named ``HAS_SPLINTER``.
 
-Task 08: Stripping Characters
+Task 8: Stripping Characters
 -----------------------------
 
 The trio of functions ``.lstrip()``, ``.rstrip()``, and ``.strip()`` can be
@@ -352,7 +363,7 @@ sequences.
     same type (eg, a string) so subsequent ``.function()`` calls are operating
     on the return (the object) of prior calls.
 
-Task 09: Multi-line Strings
+Task 9: Multi-line Strings
 ---------------------------
 
 One way to achieve a multi-line string is to use triple quotes (``"""`` or
@@ -409,7 +420,7 @@ why it still has a role in the greater Python landscape.
 Task 11: Another Way to Replace
 -------------------------------
 
-``.replace()`` and ``.re()`` aren't the only way to replace values in a string.
+``.replace()`` and ``.re()`` are not the only way to replace values in a string.
 Using a combination of ``.index()``, slicing, ``len()``, and concatenation
 you can achieve roughly the same effect.
 
@@ -636,7 +647,7 @@ very important distinction as you'll see below.
     Much of what you see in this file may be new and that's intended. A
     critical skill for programmers of all aptitudes is the ability to
     investigate complex codebases and identify a particular feature or fix that
-    is already within the scope of your current skillset. Many codebases are
+    is already within the scope of your current skill set. Many code bases are
     so large it is literally impossible for any one person to have a complete
     understanding of the system and in such situations, it is important to have
     the confidence and experience necessary to successfully skim through the
@@ -660,8 +671,8 @@ In order to receive full credit you must complete the assignment as-instructed
 and without any violations (reported in the build status). There will be
 automated tests for this assignment to provide early feedback on program code.
 
-When you have completed this assignment, please post the link to your
-pull request in the body of the assignment on Blackboard in order to receive
+When you have completed this assignment, **post the link to your
+pull request in the body of the assignment on Blackboard** in order to receive
 credit.
 
 .. _GitHub: https://github.com/
