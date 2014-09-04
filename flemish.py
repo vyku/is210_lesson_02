@@ -9,6 +9,6 @@ FISHY = inquisition.SPANISH.replace("surprise", "haddock")
 TOKEN = "Spanish"
 LEN = len(TOKEN)
 IDX = FISHY.index(TOKEN)
-FLEMISH = FISHY[:IDX] + "FLEMISH" + FISHY[IDX + LEN:]
+FLEMISH = FISHY[:IDX] + "Flemish" + FISHY[IDX + LEN:]
 
 print FLEMISH
