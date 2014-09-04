@@ -5,6 +5,8 @@
 import expectation
 
 TOKEN = "Spanish"
-INDEX = expectation.FISHY.index(TOKEN)
-FLEMISH = expectation.FISHY[:INDEX] + "Flemish" + \
-          expectation.FISHY[INDEX + len(TOKEN):]
+LEN = len(TOKEN)
+IDX = expectation.FISHY.index(TOKEN)
+FLEMISH = expectation.FISHY[:IDX] + "Flemish" + expectation.FISHY[IDX + LEN:]
+		  
+print FLEMISH
