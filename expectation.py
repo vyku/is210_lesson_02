@@ -2,6 +2,5 @@
 # -*- coding: utf-8 -*-
 """Contains expectations."""
 
-import inquisition
 
-FISHY = inquisition.SPANISH.replace("surprise", "haddock")
+import inquisition

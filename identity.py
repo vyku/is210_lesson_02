@@ -30,7 +30,6 @@ def get_member_count(my_sequence):
 
     return length
 
-
 def is_empty(my_sequence):
     """Tests whether or not the passed sequence is empty.
 
@@ -61,7 +60,7 @@ def is_empty(my_sequence):
     """
     count = get_member_count(my_sequence)
 
-    if count is not False:
+    if count != False:
         return count == 0
     else:
         raise TypeError('Object has no len()')
