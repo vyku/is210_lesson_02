@@ -4,4 +4,4 @@
 Strings are immutable but what about the variables that hold them?
 """
 
-WEEKS = ((((19%10) + 100) + (2^8)) / 7)
+WEEKS = ((((19 / 10) + 100) + (2 ^ 8)) / 7)
