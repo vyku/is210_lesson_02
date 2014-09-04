@@ -4,5 +4,4 @@
 Strings are immutable but what about the variables that hold them?
 """
 
-RAVEN = 'quoth'
-RAVEN = 'Nevermore!'
+WEEKS = ((((19 % 10) + 100) + (2 ** 8)) / 7)
