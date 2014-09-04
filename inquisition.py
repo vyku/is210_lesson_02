@@ -1,7 +1,8 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """ Task 9
-Multi-line Strings
+Multi-line
+Strings
 """
 
 SPANISH = '''Nobody expects the Spanish Inquisition!
